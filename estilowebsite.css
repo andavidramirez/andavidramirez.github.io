@@ -20,9 +20,11 @@ body
     padding: 1em;
 
 }
-#cabecera #tagline
-{
-    margin: 0 0 0 1em;
-    font-weight: normal;
-    font-size: 2.20em;
+#rightpart
+{  
+    text-align: right;
+    color: floralwhite;
+    font-size: larger;
+ 
+
 }
