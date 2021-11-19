@@ -2,6 +2,7 @@
 body 
 {
   background: white;
+  
 }
 
 header /*mueve lo negro*/
@@ -51,14 +52,54 @@ header nav a
 
 main 
 {
-    margin-top: 200px;
-    text-align: center;
+    margin-top: 8%;
+    text-align: auto;
+    margin-bottom: 10px;
 }
 
 
-section img
+main .profile 
 {
-    width: 25%;
-    margin-left: 130px;
+    width: 50px;
+    margin-left: 150px;
     margin-bottom: 10px;
+    
+}
+.profile img
+{
+    width: 370px;
+    float: left;
+
+}
+
+main .text
+{
+    border-radius: 200px;
+    padding: 70px;
+    margin-top: 5px;
+    vertical-align: text-top;
+    margin-left: 550px;
+    margin-right: 250px;
+    line-height: 25px;
+    font-size: 18px;
+}
+footer
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 149px;
+    background-color: khaki;
+    position: absolute;
+    bottom: 8px;
+}
+footer .alineadotextoabajo
+{
+    margin-left: 300px;
+    line-height: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+footer .logolinks
+{
+
 }
