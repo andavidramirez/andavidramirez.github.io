@@ -69,6 +69,7 @@ main .profile
 {
     width: 370px;
     float: left;
+    box-shadow: 5px 4px 4px #cccc;
 
 }
 
@@ -97,14 +98,14 @@ footer .alineadotextoabajo
     margin-left: 300px;
     line-height: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    float: right;
 }
 footer .logolinks
 {
-    margin-top: 8px;
-    margin-left: 200px;
-    width: 2px;
-    height: 140px;
+   
+    width: 10px;
+    height: 10px;
+    line-height: 25px
     
    
 
