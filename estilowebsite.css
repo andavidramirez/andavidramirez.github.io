@@ -114,14 +114,22 @@ footer
 .logoinfoconteiner .logolinks
 {
     text-align: left;
-    list-style:none;
+    display: flex;
+    flex-direction: column;  
+    margin-left: 250px;
+    margin-top: 5px; 
+    padding: 2px; 
+    line-height: 23px;
+    list-style: none;
+    
 }
 footer .alineadotextoabajo
 {
     line-height: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:left;
-    margin-left: 400px;
+    margin-left: 10px;
+    
 }
 .alineadotextoabajo a
 {
