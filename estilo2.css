@@ -1,0 +1,49 @@
+*{margin: 0; padding: 0;}
+body 
+{
+  background: white;
+}
+
+header 
+
+{
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  
+
+}
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .cabecera
+{
+    color: white;
+    font-size: 30px;
+    float:left;
+    padding: 1.5%;
+    text-align: left;
+
+}
+
+header nav
+{ 
+    float:right;
+    color: white;
+    font-size: 20px;
+    padding: 1.5%;
+}
+ header nav a 
+ {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+
+ }
