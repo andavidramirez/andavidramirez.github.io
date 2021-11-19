@@ -65,9 +65,8 @@ section img
     margin-bottom: 10px;
 }
 
-section p
+section div
 {
-    max-width: 30%;
-    text-justify: distribute;
+    max-width: 100%;
     text-align: right;
 }
