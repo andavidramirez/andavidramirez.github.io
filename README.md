@@ -1,2 +1,2 @@
 # andavidramirez.github.io
-public website 
+personal website 
