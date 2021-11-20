@@ -102,6 +102,7 @@ footer
     background-color: rgb(230, 217, 104);
     position: absolute;
     bottom: 8px;
+    position: fixed;
 }
 
 .logoinfoconteiner
