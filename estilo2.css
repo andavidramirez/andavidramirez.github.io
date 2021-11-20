@@ -41,6 +41,7 @@ header .cabecera
     float:left;
     padding: 1.5%;
     text-align: left;
+    letter-spacing: 1.5px;  
 }
 
 header nav
