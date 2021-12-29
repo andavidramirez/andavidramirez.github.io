@@ -171,7 +171,6 @@ footer .alineadotextoabajo
   
   ul {
     list-style: none;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -247,6 +246,8 @@ footer .alineadotextoabajo
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: #1d1f1d;
+    text-align: center;
   }
   
   .mobile-menu {
@@ -254,12 +255,12 @@ footer .alineadotextoabajo
     position: absolute;
     top: 50px;
     left: 0;
-    height: calc(100vh - 50px);
     width: 100%;
   }
   
   .mobile-menu li {
     margin-bottom: 10px;
+    width: 100%;
   }
   
   @media only screen and (max-width: 600px) {
