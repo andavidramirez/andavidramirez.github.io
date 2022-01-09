@@ -18,8 +18,6 @@ header /*mueve lo negro*/
     width: 100%;
     overflow: hidden;
     box-shadow: 0px 2px 5px 0px #262323;
-    
-
 }
 .wrapper{
     width: 100%;
@@ -80,7 +78,7 @@ main .profile
 main .text
 {
     margin-left: 5vw;
-    margin-top: 5px;
+    margin-top: 40px;
     line-height: 28px;
     font-size: 18px;
 }
@@ -90,200 +88,131 @@ main .text a
     color: royalblue;
 }
 
-
-.logoinfoconteiner
-{
-    display: flex;
-    justify-content:space-around 10px;
-    flex-wrap: nowrap;  
-
-}
-.logoinfoconteiner .logolinks
-{
-    text-align: left;
-    display: flex;
-    flex-direction: column;  
-    margin-left: 250px;
-    margin-top: 4.5px; 
-    padding: 2px; 
-    line-height: 23px;
-    list-style: none;
-    
-}
-footer .alineadotextoabajo
-{
-    line-height: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align:left;
-    margin-left: 9px;
-    
-}
-.alineadotextoabajo a
-{
-    text-decoration: none;
-
+header a {
+  text-decoration: none;
 }
 
-@media (max-width: 800px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-    
+header {
+  background-color: #262323;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+
+#brand {
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #09c372;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#hamburger-icon {
+  padding-right: 10px;
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1d1f1d;
+  text-align: center;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
   }
 
-
-
-
-
-
-  header a {
-    text-decoration: none;
-  }
-  
   header {
-    background-color: #262323;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0px;
+    height: 50px;
   }
-  
-  #brand {
-    padding-left: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-  }
-  
-  #brand a {
-    color: #09c372;
-  }
-  
-  ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  ul a {
-    color: white;
-  }
-  
-  ul li {
-    padding: 5px;
-    margin-left: 10px;
-  }
-  
-  ul li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-  
-  #login,
-  #signup {
-    border-radius: 5px;
-    padding: 5px 8px;
-  }
-  
-  #login {
-    border: 1px solid #498afb;
-  }
-  
-  #signup {
-    border: 1px solid #ff3860;
-  }
-  
-  #signup a {
-    color: #ff3860;
-  }
-  
-  #login a {
-    color: #498afb;
-  }
-  
-  #hamburger-icon {
-    padding-right: 10px;
-    margin: auto 0;
-    display: none;
-    cursor: pointer;
-  }
-  
-  #hamburger-icon div {
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-  
-  .open .bar2 {
-    opacity: 0;
-  }
-  
-  .open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-  }
-  
-  .open .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #1d1f1d;
-    text-align: center;
-  }
-  
-  .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-  }
-  
-  .mobile-menu li {
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    header nav {
-      display: none;
-    }
 
-    header {
-      height: 50px;
-    }
-  
-    #hamburger-icon {
-      display: block;
-    }
+  #hamburger-icon {
+    display: block;
   }
+}
 
 
 footer {
-    margin-top: auto;
-    width: 100%;
-    background-color: #262323;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-    align-items: center;
+  margin-top: auto;
+  width: 100%;
+  background-color: #262323;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  margin: 15px 0px;
+  margin: 15px 0px 15px 50px;
 }
 
 .contact-title {
@@ -361,4 +290,17 @@ footer {
 .social-icons a.linkedin:hover
 {
   background-color:#007bb6
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column;
+  }
 }

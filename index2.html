@@ -6,29 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo2.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
     <header>
-        <div class="wrapper">
-            <div class="cabecera">
-              <strong>Angel David Ramírez-Romero</strong>
-            </div> 
-       
-            <nav>
-                <a href="https://andavidramirez.github.io/">HOME</a>
-                <a href="assets/CV_Angel_Ramirez.pdf" target="_blank">CV</a>
-                <a href="https://scholar.google.es/citations?hl=es&view_op=list_works&gmla=AJsN-F6f_WQP3ToRorJvcxLqjE7squE_t22mAT9Ib7kAS67uQ0uyZsA-
-                g7S0enfeEt6QEpi3TR9SpHdIHKExCyX58DTAp6E263QoYrqIPN-vkMDy7K8kolk&user=8ax-Tf0AAAAJ" target="_blank">Google Scholar</a>  
-            </nav> 
-        </div>  
+        <div id="brand"><a href="/">Angel David Ramírez-Romero</a></div>
+        <nav>
+          <ul>
+            <li><a href="https://andavidramirez.github.io/" target="_blank">Home</a></li>
+            <li><a href="assets/CV_Angel_Ramirez.pdf" target="_blank">CV</a></li>
+            <li><a href="https://scholar.google.es/citations?hl=es&view_op=list_works&gmla=AJsN-F6f_WQP3ToRorJvcxLqjE7squE_t22mAT9Ib7kAS67uQ0uyZsA-
+                g7S0enfeEt6QEpi3TR9SpHdIHKExCyX58DTAp6E263QoYrqIPN-vkMDy7K8kolk&user=8ax-Tf0AAAAJ" target="_blank">Google Scholar</a></li>
+            <li><a href="index2.html">More</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="https://andavidramirez.github.io/">Home</a></li>
+            <li><a href="assets/CV_Angel_Ramirez.pdf" target="_blank">CV</a></li>
+            <li><a href="https://scholar.google.es/citations?hl=es&view_op=list_works&gmla=AJsN-F6f_WQP3ToRorJvcxLqjE7squE_t22mAT9Ib7kAS67uQ0uyZsA-
+                g7S0enfeEt6QEpi3TR9SpHdIHKExCyX58DTAp6E263QoYrqIPN-vkMDy7K8kolk&user=8ax-Tf0AAAAJ" target="_blank">Google Scholar</a></li>
+            <li><a href="index2.html">More</a></li>
+          </ul>
+        </div>
     </header>
     <section class="contenido">
-        <h2></h2>
         <h1><strong>Some places where I have been</strong></h1>
-        <p>I was born in Cúcuta but I have lived the most of the time in Villa del Rosario, 
+        <p style="margin-bottom: 35px;">I was born in Cúcuta but I have lived the most of the time in Villa del Rosario, 
            near to the border between Colombia and Venezuela. These are some pictures from my town and other cities
            that I have visited.</p>
-
+<!-- 
         <div class="contenedor" class="text">
             <li><h1>Santiago de Chile</h1>
             <img src="assets/santiago3.JPG" width="600" height="800" alt="Chile"></li>
@@ -57,11 +67,80 @@
             <li><h1>Boston, United states</h1>
             <img src="assets/Boston.jpg" width="600" height="800" alt="EEUU"></li>
 
+        </div> -->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 9</div>
+                <img src="assets/santiago3.JPG">
+                <div class="text">Santiago de Chile</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 9</div>
+                <img src="assets/vrosario.jpg">
+                <div class="text">Villa del Rosario, Colombia</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 9</div>
+                <img src="assets/cucuta.jpeg">
+                <div class="text">Cúcuta, Colombia</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 9</div>
+                <img src="assets/lacaimanera.jpg">
+                <div class="text">Coveñas, Colombia</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 9</div>
+                <img src="assets/windsor.jpg">
+                <div class="text">New Hampshire, United states</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 9</div>
+                <img src="assets/Sancristobal.jpg">
+                <div class="text">San Cristobal, Venezuela</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 9</div>
+                <img src="assets/Pamplona.jpg">
+                <div class="text">Pamplona, Colombia</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 9</div>
+                <img src="assets/chinacota.jpg">
+                <div class="text">Chinácota, Norte de Santander, Colombia</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 9</div>
+                <img src="assets/Boston.jpg">
+                <div class="text">Boston, United states</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
-
-    
-
+        <br>
+        
+        <div style="text-align:center; margin-bottom: 10px;">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span> 
+        </div>
 
     </section>
     
